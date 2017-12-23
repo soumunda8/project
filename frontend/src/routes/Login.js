@@ -46,6 +46,7 @@ class Login extends React.Component {
 //                this.props.history.push('/register');
                 history.push('/register');
             } else if ( error === -1 ) {
+                alert('비밀번호가 맞지 않습니다.');
                 return;
             }
         });
