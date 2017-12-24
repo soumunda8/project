@@ -1,8 +1,7 @@
 import React from 'react';
 
 const Card = (props) => {
-    
-//    let classes = (props.favorite === 1) ? 'favorite active' : 'favorite';
+
     let classes = '';
     
     if ( props.favorite === 1 ) {
@@ -13,7 +12,7 @@ const Card = (props) => {
     
     return(
         <div>
-            <div className="card">
+            <div className="card" onClick={() => {props.cardLink(props.company_id)}}>
                 <div className="thums">
                     <div className="img"></div>
                     <div className="logo"></div>
